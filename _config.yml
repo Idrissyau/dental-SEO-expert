@@ -1,0 +1,41 @@
+title: Dental SEO Expert
+email: info@idrisyau.com
+description: "Dental SEO Expert helping dentists improve local visibility, capture more patients, and grow dental practices with SEO strategies built for dental clinics."
+url: "https://idrisyau.com"
+baseurl: ""
+timezone: "UTC"
+permalink: /:basename/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+      author: "Dental SEO Expert"
+
+navigation:
+  - title: Home
+    url: /
+  - title: Services
+    url: /services/
+  - title: Case Studies
+    url: /case-studies/
+  - title: Contact
+    url: /contact/
+
+feed:
+  path: feed.xml
+
+sitemap:
+  exclude:
+    - ".github"
+    - "assets"
+  include:
+    - "/"
+    - "/services/"
+    - "/case-studies/"
+    - "/contact/"
